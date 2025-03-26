@@ -83,10 +83,15 @@
     font-size: 15px;
     opacity: 0;
     transition: opacity 0.7s ease-in-out, transform 0.9s ease-in-out;
-  
-  }
-  
-  .reloj:hover .relatividad {
+}
+
+.reloj {
+    position: relative;
+    overflow: hidden; /* Limita el hover al área del círculo */
+    border-radius: 50%; /* Asegura que el contenedor sea circular */
+}
+
+.reloj:hover .relatividad {
     opacity: 1;
     transform: translateX(0);  
-  }
+}
