@@ -43,3 +43,50 @@
 }
 
 
+/* Contenedor del cuadro */
+.relatividad-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Estilo del cuadro */
+ 
+ @keyframes moverDerecha {
+    0% {
+       opacity: 0;
+       transform: translateX(-20px) 
+    }
+    100% { 
+       opacity: 1;
+       transform: translateX(10px);
+    }
+ }
+ 
+ .relatividad {
+    position: fixed;
+    left: 57%;
+    top: 50%;  
+    transform: translateX(-100%); 
+    background-color: white;
+    color: black;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out, transform 0.9s ease-in-out;
+  
+  }
+  
+  .reloj:hover .relatividad {
+    opacity: 1;
+    transform: translateX(0);  
+  }
