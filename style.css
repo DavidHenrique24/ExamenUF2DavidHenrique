@@ -1,4 +1,4 @@
-/* Elementos animados que aparecen al hacer scroll */
+/* 1p Animacion de entrada */
 .animado {
     color: white;
     opacity: 0;
@@ -11,3 +11,35 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+/*Flecha azul  */
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#minutos {
+    transform-origin: 200px 200px;
+    animation: rotar 15s linear infinite;
+}
+
+/* Flecha roja */
+@keyframes rotar2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#minutosRojo {
+    transform-origin: 200px 200px;
+    animation: rotar 50s linear infinite;
+}
+
+
