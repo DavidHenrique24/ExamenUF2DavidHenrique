@@ -1,0 +1,13 @@
+/* Elementos animados que aparecen al hacer scroll */
+.animado {
+    color: white;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Clase aplicada cuando el elemento entra en pantalla */
+.animado.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
